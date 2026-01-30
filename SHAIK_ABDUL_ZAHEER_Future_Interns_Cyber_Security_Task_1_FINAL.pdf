@@ -1,0 +1,37 @@
+Cyber Security Task 1 – Vulnerability
+Assessment Report (2026)
+Name: SHAIK ABDUL ZAHEER
+Registration Number: RA2411030020266
+University: SRM University Ramapuram
+Department & Year: Cyber Security – 2nd Year
+Internship Program: Future Interns – Cyber Security (2026)
+Target Website: https://jsonplaceholder.typicode.com
+Executive Summary
+This report documents a passive vulnerability assessment conducted as part of the Future Interns
+Cyber Security Internship Program (2026). The objective was to evaluate the publicly exposed
+security posture of a website without exploiting vulnerabilities.
+Scope & Methodology
+The assessment scope was limited to passive reconnaissance. Techniques included analysis of
+HTTP response headers, TLS configuration review, and safe network scanning. No intrusive or
+exploitative actions were performed.
+Findings
+1. HTTPS & TLS: Secure TLS encryption is implemented with a valid certificate.
+2. Missing HSTS Header: Absence of Strict-Transport-Security increases exposure to downgrade
+and SSL stripping attacks.
+3. Server Disclosure: The web server reveals nginx information via headers.
+Risk Assessment
+Missing HSTS: Medium Risk
+Server Disclosure: Low Risk
+Remediation Recommendations
+• Configure Strict-Transport-Security with a long max-age value.
+• Enforce comprehensive HTTP security headers.
+• Conduct periodic passive security reviews.
+Supporting Evidence
+Screenshots to be attached during GitHub submission:
+• Browser Network Headers
+• OWASP ZAP Passive Scan Summary
+• Nmap Safe Scan Output
+Conclusion
+The assessed website demonstrates a secure foundation but can be further strengthened by
+implementing missing transport security controls. The recommendations align with industry best
+practices and improve overall resilience.
